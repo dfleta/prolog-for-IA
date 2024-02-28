@@ -1,0 +1,7 @@
+pkg:github/user-or-org-name/pkg-name
+
+[external]
+host-requires = [
+  "pkg:github/user-or-org-name/pkg-name",
+  "pkg:github/SWI-Prolog/swipl-devel",
+]
