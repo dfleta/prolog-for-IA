@@ -45,4 +45,4 @@ venv
 .vscode
 
 # jupyter
-.ipynb_checkpoints/*
+.ipynb_checkpoints
