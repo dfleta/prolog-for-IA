@@ -70,7 +70,6 @@ Aquí un ejemplo de [jupyter notebook con kernel Prolog: sintaxis e instruccione
 
 ### Desde este repo
 
-
 Clona el proyecto en tu máquina:
 
 `mkdir prolog; cd prolog`
@@ -83,10 +82,16 @@ Crea el entorno virtual y actívalo:
 
 `source venv/bin/activate`
 
-Las dependencias de primer nivel están pineadas en el fichero [requirements.in](./requirements.in), pero para instalar todas las dependencias has de utilizar el fichero [requirements.txt](./requirements.txt): 
+Las dependencias de primer nivel testeadas en el repo de Herculog están pineadas en el fichero [requirements.in](./requirements.in), pero para instalar todas las dependencias has de utilizar el fichero [requirements.txt](./requirements.txt): 
 
 `pip install -r requirements.txt`
 
+El fichero [requirements-updated.txt](./requirements-updated.txt) contiene las versiones actualizadas de las dependencias de primer nivel con las que el kernel Herculog funciona para esta versión de SWI-Prolog:
+
+``` zsh
+% swipl --version 
+SWI-Prolog version 9.2.0 for x86_64-darwin
+```
 
 ## 3. Ejercicios propuestos Prolog
 
