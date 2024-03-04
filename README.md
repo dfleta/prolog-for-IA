@@ -7,7 +7,7 @@ Aprendiendo PROLOG - Instalación
 
 La idea es disponer del entorno SWI-Prolog para ejecutarlo desde línea de comandos en tu sistema operativo o desde el entorno que proporciona el programa.
 
-Una vez instalado, usaremos Jupyter Notebooks con un kernel SWI-Prolog, para que realizar los ejercicios propuestos en la carpeta [notebooks](./notebooks/) en el navegador.
+Una vez instalado, usaremos Jupyter Notebooks con un kernel SWI-Prolog (Herculog), para que realizar los ejercicios propuestos en la carpeta [notebooks](./notebooks/) en el navegador.
 
 ## 1. Instalación de SWI-Prolog
 
@@ -15,7 +15,7 @@ Sigue las instrucciones necesarias para instalar SWI-Prolog en tu sistema operat
 
 Descarga la [versión estable SWI-Prolog](https://www.swi-prolog.org/download/stable).
 
-Aquí también las de [desarrollo](https://www.swi-prolog.org/Download.html)
+Aquí también las de [desarrollo](https://www.swi-prolog.org/Download.html).
 
 Si es MacOSX, consulta conmigo los detalles de la configuración final de las variables de entorno:
 
@@ -43,7 +43,7 @@ PLLIBDIR="/Applications/SWI-Prolog.app/Contents/swipl/lib/x86_64-darwin";
 PLLIBSWIPL="/Applications/SWI-Prolog.app/Contents/Frameworks/libswipl.9.2.0.dylib";
 ```
 
-Edita tu fichero `.zshrc` o `.bashrc` para que incluya esta configuración de variables de entorno:
+Edita tu fichero `.zshrc` o `.bashrc` en tu `home` para que incluya esta configuración de variables de entorno:
 
 ```zsh
 PATH="/Applications/SWI-Prolog.app/Contents/MACOS/:${PATH}"
@@ -54,7 +54,7 @@ export PATH
 
 ## 2. Instalación del kernel Prolog - Herculog para jupyter notebook
 
-### Desde la distribución Herculog
+### Desde la distribución Herculog
 
 Aquí el repo:
 
@@ -68,7 +68,16 @@ Es necesario seguir la instalación en el orden indicado pineando[^1] las versio
 
 Aquí un ejemplo de [jupyter notebook con kernel Prolog: sintaxis e instrucciones](https://github.com/hhu-stups/prolog-jupyter-kernel/blob/master/notebooks/feature_introduction/swi/using_jupyter_notebooks_with_swi_prolog.ipynb)
 
-### Desde este repo
+### Desde este repo
+
+
+Clona el proyecto en tu máquina:
+
+`mkdir prolog; cd prolog`
+
+`git clone https://github.com/dfleta/prolog-for-IA.git` 
+
+Crea el entorno virtual y actívalo:
 
 `python -m venv venv`
 
@@ -95,6 +104,8 @@ Accede con tu navegador al localhost:
 
 `http://localhost:8888/`
 
+y abre el notebook seleccionando el kernel `Prolog`.
+
 ## 4. Cómo aprender Prolog
 
 En el directorio [doc](./doc) encontrarás mis apuntes del libro [_Prolog, programming for Artificial Intelligence_ de Ivan Bratko.](https://drive.google.com/file/d/19RQO9T4452kuj-iK5ynsuafZ5opRIWOn/view?usp=drive_link) 
@@ -104,4 +115,4 @@ Iré publicando mis resúmenes de los capítulos según los necesitemos.
 Empléalos para completar los ejercicios propuestos.
 
 ----------------------------------------------------------------------------------------------------
-[^1]: consulta el fichero `requirements.in` y mi [tutorial sobre cómo especificar las versiones de las dependencias](https://github.com/dfleta/ollivanders?tab=readme-ov-file#dependencias) de tu proyecto Python.
+[^1]: Consulta el fichero `requirements.in` y mi [tutorial sobre cómo especificar las versiones de las dependencias](https://github.com/dfleta/ollivanders?tab=readme-ov-file#dependencias) de tu proyecto Python.
