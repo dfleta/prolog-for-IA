@@ -85,7 +85,7 @@ Crea el entorno virtual y actívalo:
 
 Las dependencias de primer nivel están pineadas en el fichero [requirements.in](./requirements.in), pero para instalar todas las dependencias has de utilizar el fichero [requirements.txt](./requirements.txt): 
 
-`pip install requirements.txt`
+`pip install -r requirements.txt`
 
 
 ## 3. Ejercicios propuestos Prolog
